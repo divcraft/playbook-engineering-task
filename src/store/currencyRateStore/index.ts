@@ -1,5 +1,5 @@
 import { makeObservable, observable, action } from 'mobx';
-// import { controlCurrency } from 'helpers';
+import { controlCurrency } from 'helpers';
 
 export interface CurrencyRateModel {
   eur: string;
