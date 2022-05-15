@@ -1,6 +1,8 @@
+import { ExpensesTemplate } from 'templates';
+
 function App() {
   return (
-    <div>app</div>
+    <ExpensesTemplate />
   );
 }
 
