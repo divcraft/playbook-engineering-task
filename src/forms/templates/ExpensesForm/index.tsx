@@ -2,7 +2,7 @@ import { MouseEvent } from 'react';
 import { observer } from 'mobx-react-lite';
 import { Button } from 'components';
 import { useStore, useValidateForm } from 'hooks';
-// import { minCharacters, maxCharacters, required, Input } from 'forms';
+import { minCharacters, maxCharacters, required, Input } from 'forms';
 
 export const ExpensesForm = observer(() => {
   const { expensesStore: {formDataStore, listStore} } = useStore();
