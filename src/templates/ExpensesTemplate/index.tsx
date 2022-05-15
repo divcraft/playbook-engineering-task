@@ -7,7 +7,7 @@ export const ExpensesTemplate = () => {
   return (
     <div className={styles.expensesContainer} >
       <Headline1>List of expenses</Headline1>
-      <EurConversionForm />
+      {/* <EurConversionForm /> */}
       <ExpensesForm />
       <ExpensesTable />
       <ExpensesSum />
