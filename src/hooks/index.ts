@@ -1,2 +1,2 @@
 export * from './useStore';
-// export * from './useValidateForm';
+export * from './useValidateForm';
