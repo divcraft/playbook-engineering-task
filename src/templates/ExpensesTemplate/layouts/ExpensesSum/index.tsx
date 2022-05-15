@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import { useStore } from 'hooks';
 import { Paragraph } from 'components';
-// import { plnToEur } from 'helpers';
+import { plnToEur } from 'helpers';
 
 export const ExpensesSum = observer(() => {
   const { expensesStore: {listStore}, currencyRate } = useStore();

@@ -1,2 +1,2 @@
 export * from './controlCurrency';
-// export * from './plnToEur';
+export * from './plnToEur';

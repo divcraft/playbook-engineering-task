@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import { TableHead, TableBody, Button } from 'components';
 import { useStore } from 'hooks';
-// import { plnToEur } from 'helpers';
+import { plnToEur } from 'helpers';
 import styles from './style.module.scss';
 
 export const ExpensesTable = observer(() => {
