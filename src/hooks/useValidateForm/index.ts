@@ -1,24 +1,10 @@
 import { useState } from 'react';
-
-interface FieldDataModel {
-  name: string;
-  value: string;
-  validators: ((value: string) => {
-    isValid: boolean;
-    message: string;
-})[];
-};
-
-
-interface ValidationItemModel {
-  isValid: boolean;
-  errorMessage: string;
-};
+import { FieldDataModel, ValidatedFieldModel } from './types';
 
 export const useValidateForm = (fieldsData: FieldDataModel[]) => {
-  const [validatedFields, setValidatedFields] = useState<ValidationItemModel[]>([]);
+  const [validatedFields, setValidatedFields] = useState<ValidatedFieldModel[]>([]);
   const validate = () => {
-    const newValidatedFields: ValidationItemModel[] = fieldsData.map(field => {
+    const newValidatedFields: ValidatedFieldModel[] = fieldsData.map(field => {
       let isValid = true;
       let errorMessage = '';
       field.validators.forEach(validator => {

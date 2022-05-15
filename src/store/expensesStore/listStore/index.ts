@@ -1,10 +1,5 @@
 import { makeObservable, observable, action } from 'mobx';
-
-export interface ExpenseModel {
-  id: number;
-  title: string;
-  plnAmount: number;
-};
+import { ExpenseModel } from './types';
 
 export class ExpensesList {
   list: ExpenseModel[] = [];

@@ -1,17 +1,11 @@
 import { makeObservable, observable, action } from 'mobx';
 import { controlCurrency } from 'helpers';
-
-export interface ExpenseFormModel {
-  title: string;
-  plnAmount: string;
-  isValid: boolean;
-};
+import { FormDataModel } from './types';
 
 export class ExpensesFormData {
-  formData: ExpenseFormModel = {
+  formData: FormDataModel = {
     title: '',
     plnAmount: '',
-    isValid: false,
   };
   constructor() {
     makeObservable(this, {

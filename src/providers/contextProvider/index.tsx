@@ -1,15 +1,10 @@
-import { FC, createContext, ReactNode, ReactElement } from 'react';
+import { FC, createContext } from 'react';
 import { rootStore, RootStore } from 'store';
+import { ContextProviderModel } from './types';
 
 export const StoreContext = createContext<RootStore>({} as RootStore);
 
-export type StoreComponent = FC<{
-  children: ReactNode;
-}>;
-
-export const ContextProvider: StoreComponent = ({
-  children,
-}): ReactElement => {
+export const ContextProvider: FC<ContextProviderModel> = ({children}) => {
   return (
     <StoreContext.Provider value={rootStore}>{children}</StoreContext.Provider>
   );
