@@ -4,8 +4,8 @@ import { Paragraph } from 'components';
 // import { plnToEur } from 'helpers';
 
 export const ExpensesSum = observer(() => {
-  const { expensesStore: {listStore}, conversionRate } = useStore();
-  const eurRate = conversionRate.currencyValues.eur;
+  const { expensesStore: {listStore}, currencyRate } = useStore();
+  const eurRate = currencyRate.currencyValues.eur;
   let plnSum = 0; 
   listStore.list.map(item =>  plnSum = plnSum + item.plnAmount);
   return (

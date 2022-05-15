@@ -1,12 +1,12 @@
 import { ExpensesStore } from './expensesStore';
-import { ConversionRate } from './conversionRateStore';
+import { CurrencyRate } from './currencyRateStore';
 
 export class RootStore {
   expensesStore: ExpensesStore;
-  conversionRate: ConversionRate;
+  currencyRate: CurrencyRate;
   constructor() {
     this.expensesStore = new ExpensesStore();
-    this.conversionRate = new ConversionRate();
+    this.currencyRate = new CurrencyRate();
   };
 };
 

@@ -1,11 +1,11 @@
 import { observer } from 'mobx-react-lite';
-import { TableHead, TableBody, Button } from 'components';
+// import { TableHead, TableBody, Button } from 'components';
 import { useStore } from 'hooks';
-import { plnToEur } from 'helpers';
+// import { plnToEur } from 'helpers';
 import styles from './style.module.scss';
 
 export const ExpensesTable = observer(() => {
-  const { expensesStore: {listStore}, conversionRate } = useStore();
+  const { expensesStore: {listStore}, currencyRate } = useStore();
   const handleRemove = (id: number) => {
     listStore.removeExpense(id);
   };
@@ -15,7 +15,7 @@ export const ExpensesTable = observer(() => {
     'Amount (EUR)',
     'Options',
   ];
-  const euroValue = conversionRate.currencyValues.eur;
+  const euroValue = currencyRate.currencyValues.eur;
   const bodyList = listStore.list.map(expense => ({
     title: expense.title,
     plnAmount: expense.plnAmount,
