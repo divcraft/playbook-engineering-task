@@ -1,0 +1,30 @@
+.expensesContainer {
+  width: 90%;
+  max-width: 800px;
+  padding-top: 80px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+  'headline eurValue'
+  'expensesForm expensesForm'
+  'expensesTable expensesTable'
+  'expensesSum expensesSum';
+  & > * {
+    &:nth-child(1) {
+      grid-area: headline;
+    }
+    &:nth-child(2) {
+      grid-area: eurValue;
+    }
+    &:nth-child(3) {
+      grid-area: expensesForm;
+    }
+    &:nth-child(4) {
+      grid-area: expensesTable;
+    }
+    &:nth-child(5) {
+      grid-area: expensesSum;
+    }
+  }
+}
