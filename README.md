@@ -10,7 +10,7 @@ The app contains a form that allows us to add new expenses to the table, summary
 * custom hooks
 * react context
 
-# Code desctiption
+# Code description
 
 The project contains:
 * 6 components (Button, Headline1, Paragraph, Table, TableHead, TableBody)
@@ -22,7 +22,7 @@ The project contains:
 
 # Features
 
-The project contains a few features I'd like you to be femiliar with:
+The project contains a few features I'd like you to be familiar with:
 
 ### useStore
 
@@ -43,5 +43,5 @@ I've decided to create this function as a helper instead as a validation rule be
 
 A function that converts PLN value into EUR using euro rate data applied in mobx store.
 
- 
+# 
 Hope you enjoyed and liked reviewing this project ;)
